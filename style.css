@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor-backgroud-cabecalho:#182c61;
+    --cor-font-cabecalho: #ecf0f1;
+}
+body ,input ,textarea{
+    font-family: "Roboto", sans-serif;
+}
+header ,
+section h2,
+section h3,
+form button{
+    font-family: "Bungee", sans-serif;
+    font-weight: normal;
+}
+
+header{
+    padding: 16px 0;
+    background-color: var(--cor-backgroud-cabecalho);
+    color: var(--cor-font-cabecalho)
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+header nav li a {
+    color: var(--cor-font-cabecalho);
+    list-style-type: none;
+    text-decoration: none;
+}
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+header .container ,
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brands-list img{
+    height: 24px;
+}
+.brands-list li{
+    display: inline;
+    margin-right: 8px;
+}
+section .container{
+    align-items: flex-start;
+}
+section {
+    padding: 24px 0;
+
+}
+section h2 {
+    margin-bottom: 16px;
+}
+section{
+    color:var(--cor-backgroud-cabecalho);
+}
+section p {
+    margin-bottom: 16px;
+}
+.store-front{
+    margin-right: 32px;
+}
+.social-links img {
+    height: 24px;
+}
+.social-links li{
+    display: inline;
+    margin-right: 8px;
+}
+.social-links li a {
+    text-decoration: none;
+}
+#contact .container{
+    display: block;
+}
+.contact-metodes{
+    display: flex;
+    justify-content:space-between;
+}
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+form textarea{
+    resize: none;
+    height: 180px;
+}
+section h3{
+    margin-bottom: 16px;
+}
+form button{
+    background-color: var(--cor-backgroud-cabecalho);
+    color: var(--cor-font-cabecalho);
+    border: none;
+    cursor: pointer;   
+}
+form button:hover{
+    background-color: #314e9e;
+}
+/* isso e para que quando selecionamos um campo as bordas mudem de cor */
+input:focus , textarea:focus{
+    outline-color: var(--cor-backgroud-cabecalho);
+}
+footer{
+    background-color: var(--cor-backgroud-cabecalho);
+    color: var(--cor-font-cabecalho);
+    padding: 16px 0;
+}
